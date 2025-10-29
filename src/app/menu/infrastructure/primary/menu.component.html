@@ -1,0 +1,15 @@
+<div class="sidebar">
+  <div class="logo">
+    <span class="logo-text">BankDash.</span>
+  </div>
+  <nav class="nav-menu">
+    <ul>
+      <li *ngFor="let item of menuItems" [class.active]="isActive(item.path)">
+        <a [routerLink]="item.path">
+          <span class="material-symbols-outlined">{{item.icon}}</span>
+          <span class="nav-text">{{item.label}}</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>

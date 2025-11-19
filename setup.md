@@ -1,6 +1,6 @@
 # IA Gen
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.6.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.6. then updated to angular 20.
 
 ## Development server
 

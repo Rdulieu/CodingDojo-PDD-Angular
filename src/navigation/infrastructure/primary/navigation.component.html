@@ -1,0 +1,24 @@
+<aside class="navigation">
+  <div class="navigation__header">
+    <mat-icon class="navigation__logo-icon">account_balance</mat-icon>
+    <span class="navigation__logo-text">Banque</span>
+  </div>
+
+  <nav class="navigation__menu">
+    <a
+      routerLink="/"
+      routerLinkActive="navigation__item--active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="navigation__item"
+      data-selector="navigation-transactions"
+    >
+      <mat-icon class="navigation__item-icon">receipt_long</mat-icon>
+      <span class="navigation__item-text">Transactions</span>
+    </a>
+
+    <div class="navigation__item navigation__item--disabled">
+      <mat-icon class="navigation__item-icon">person</mat-icon>
+      <span class="navigation__item-text">Profil</span>
+    </div>
+  </nav>
+</aside>

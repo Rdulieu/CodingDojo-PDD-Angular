@@ -1,0 +1,14 @@
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e9ecef;
+  padding: 24px 32px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+
+  &__title {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 600;
+    color: #1f2937;
+    line-height: 1.2;
+  }
+}

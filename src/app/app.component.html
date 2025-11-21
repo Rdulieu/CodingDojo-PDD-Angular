@@ -1,1 +1,9 @@
-<router-outlet> </router-outlet>
+<div class="app-container">
+  <app-navigation />
+  <div class="content-area">
+    <app-header [title]="'Transactions'" />
+    <main class="main-content">
+      <router-outlet />
+    </main>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="transactions-page" data-selector="transactions-page">
+  <section class="accounts-section">
+    <h2 class="section-title">Mes comptes</h2>
+    <div class="accounts-grid">
+      @if (currentAccount(); as account) {
+        <app-account-card [account]="account" />
+      }
+      @if (savingsAccount(); as account) {
+        <app-account-card [account]="account" />
+      }
+    </div>
+  </section>
+
+  <section class="transactions-section">
+    <app-transactions-table [transactions]="transactions()" />
+  </section>
+</div>

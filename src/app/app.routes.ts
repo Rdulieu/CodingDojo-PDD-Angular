@@ -1,4 +1,4 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/infrastructure/primary/home.component';
+import { TransactionsPageComponent } from '../transactions/infrastructure/primary/transactions-page.component';
 
-export const routes: Routes = [{ path: '', component: HomeComponent }];
+export const routes: Routes = [{ path: '', component: TransactionsPageComponent }];

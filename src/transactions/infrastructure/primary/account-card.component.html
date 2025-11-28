@@ -1,0 +1,11 @@
+<div class="account-card" [style.backgroundColor]="account().getColor()" data-selector="account-card">
+  <div class="account-card__header">
+    {{ account().getDisplayLabel() }}
+  </div>
+
+  <div class="account-card__balance-label">Solde</div>
+
+  <div class="account-card__balance">
+    {{ account().getFormattedBalance() }}
+  </div>
+</div>

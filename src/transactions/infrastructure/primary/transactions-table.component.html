@@ -1,0 +1,35 @@
+<div class="transactions-table">
+  <div class="transactions-table__header">
+    <h3>Transactions récentes</h3>
+    <button class="transactions-table__new-transfer-btn" data-selector="new-transfer-button">+ Nouveau virement</button>
+  </div>
+
+  <div class="transactions-table__content">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Identifiant</th>
+          <th>Type</th>
+          <th>Compte</th>
+          <th>Date</th>
+          <th>Montant</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (transaction of transactions(); track transaction.id) {
+          <tr>
+            <td>{{ transaction.description }}</td>
+            <td>{{ transaction.identifier }}</td>
+            <td>{{ transaction.type }}</td>
+            <td>{{ transaction.getAccountLabel() }}</td>
+            <td>{{ transaction.getFormattedDate() }}</td>
+            <td [style.color]="transaction.getAmountColor()" class="table__amount">
+              {{ transaction.getFormattedAmount() }}
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</div>
